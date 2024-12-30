@@ -410,6 +410,346 @@
     </div>
   </div>
   <!--=============== About us ===============-->
+
+  <!--=============== Our Doctors section ===============-->
+  <section class="our-doctors-container container max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 shadow-md bg-slate-200">
+
+    <!-- title-->
+    <div class="border-b mb-0 flex justify-between ">
+      <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase text-lg">
+
+        <h2 class="font-semibold inline-block">Our Doctors</h2>
+      </div>
+      <a href="#" class="block">
+        <button class="ml-20 bg-blue-800 hover:bg-blue-600 text-white font-bold py-1  px-4 rounded text-sm">
+          See all
+        </button>
+      </a>
+    </div>
+    <!-- title-->
+
+    <!-- card container-->
+    <div class="card__container swiper mt-0 pt-0 rounded-md">
+      <div class="card__content ">
+        <div class="swiper-wrapper">
+
+          <!-- card 1-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 1-->
+
+          <!-- card 2-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 2-->
+
+          <!-- card 3-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 3-->
+
+          <!-- card 4-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 4-->
+
+          <!-- card 5-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 5-->
+
+          <!-- card 6-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 6-->
+
+          <!-- card 7-->
+          <article class="card__article swiper-slide">
+            <div class="card__image">
+              <img src="images/doctor profile/doctor1.jpg" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">Ram hari</h3>
+              <p class="card__description">
+                MBBS
+              </p>
+
+              <a href="#" class="card__button">View Profile</a>
+            </div>
+          </article>
+          <!-- card 7-->
+
+          <!-- add here for more cards-->
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next">
+        <i class="ri-arrow-right-s-line"></i>
+      </div>
+
+      <div class="swiper-button-prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </div>
+      <!-- Navigation buttons -->
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Pagination -->
+    </div>
+  </section>
+  <!--=============== Our Doctors section ===============-->
+
+
+
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script>
+    //------js for navbar------//
+    const accordionHeadings = document.querySelectorAll(
+      '[data-toggle="accordion"]'
+    )
+    accordionHeadings.forEach((heading) => {
+      heading.addEventListener("click", () => {
+        heading.querySelector("i").classList.toggle("rotate")
+        const targetId = heading.getAttribute("data-target")
+        const target = document.querySelector(targetId)
+        target.classList.toggle("open")
+      })
+    })
+
+    const aboutNavigations = document.querySelectorAll(".about-item")
+    aboutNavigations.forEach((navigation) => {
+      navigation.addEventListener("click", (e) => {
+        turnAllOff(aboutNavigations)
+        const content = document.querySelector(navigation.dataset.target)
+        resetContent()
+        content.classList.toggle("hidden")
+        navigation.classList.toggle("about-item-active")
+      })
+    })
+
+    const turnAllOff = (item, property) => {
+      item.forEach((i) => {
+        i.classList.remove("about-item-active")
+      })
+    }
+    const resetContent = () => {
+      document.querySelectorAll(".about-content").forEach((item) => {
+        item.classList.add("hidden")
+      })
+    }
+
+    //for nav bar
+    const mobileMenuBtn = document.querySelector(
+      '[data-collapse-toggle="navbar-default"]'
+    )
+    mobileMenuBtn.addEventListener("click", function () {
+      const mobileMenu = document.getElementById(
+        this.getAttribute("data-collapse-toggle")
+      )
+      mobileMenu.classList.toggle("hidden")
+    })
+    //------js for navbar------//
+
+    //------js for 1st image slider------//
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      const paginationBtns = document.querySelectorAll('.pagination-btn');
+      const intervalTime = 4000; // Interval time in milliseconds 
+      let slideInterval;
+      let currentSlide = 0;
+
+      function showSlide() {
+        slides.forEach((slide, index) => {
+          if (index === currentSlide) {
+            slide.style.display = 'flex'; // Adjusted display property
+          } else {
+            slide.style.display = 'none';
+          }
+        });
+        updatePagination();
+      }
+
+      function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+          currentSlide = 0;
+        }
+        showSlide();
+      }
+
+      function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+          currentSlide = slides.length - 1;
+        }
+        showSlide();
+      }
+
+      function startSlideShow() {
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
+
+      function stopSlideShow() {
+        clearInterval(slideInterval);
+      }
+
+      function updatePagination() {
+        paginationBtns.forEach((btn, index) => {
+          if (index === currentSlide) {
+            btn.classList.add('bg-blue-500'); // Added blue background to active button
+            btn.classList.remove('bg-gray-400'); // Removed gray background from other buttons
+          } else {
+            btn.classList.remove('bg-blue-500'); // Removed blue background from inactive buttons
+            btn.classList.add('bg-gray-400'); // Added gray background to inactive buttons
+          }
+        });
+      }
+
+      prevBtn.addEventListener('click', function () {
+        prevSlide();
+        stopSlideShow();
+      });
+      nextBtn.addEventListener('click', function () {
+        nextSlide();
+        stopSlideShow();
+      });
+
+      paginationBtns.forEach((btn, index) => {
+        btn.addEventListener('click', function () {
+          currentSlide = index;
+          showSlide();
+          stopSlideShow();
+        });
+      });
+
+      showSlide();
+      startSlideShow(); // Start the autoplay when the page loads
+      //------js for 1st image slider------//
+
+      //------js for doctor image slider------//
+      let swiperCards = new Swiper(".card__content", {
+        loop: true,
+        spaceBetween: 32,
+        grabCursor: true,
+        autoplay: {
+          delay: 2000, // Set the delay between slides in milliseconds (2 seconds in this)
+          disableOnInteraction: false, // Set to false to keep autoplaying even when user interacts with the slider
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+          968: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    });
+    //------js for doctor image slider------//
+  </script>
 </body>
 
 </html>
