@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chure Hill Hospital, Hetauda</title>
+
+    <!--=============== favicon===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!--=============== Tailwindcss ===============-->
+    <link href="output.css" rel="stylesheet">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== Font awesome ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        nav ul li a {
+          color: black;
+        }
+    
+        @media (min-width: 768px) {
+          .slides-container {
+            height: 32rem;
+          }
+    
+        }
+    
+        /*=============== VARIABLES CSS ===============*/
+        :root {
+          /*========== Colors ==========*/
+          /*Color mode HSL(hue, saturation, lightness)*/
+          --first-color: hsl(240, 98%, 42%);
+          --first-color-light: hsl(70, 38%, 76%);
+          --first-color-alt: hsl(34, 6%, 51%);
+          --second-color: hsl(0, 0%, 5%);
+          --dark-color: hsl(0, 0%, 92%);
+          --white-color: hsl(212, 4%, 95%);
+          --body-color: hsl(0, 0%, 100%);
+          --container-color: hsla(224, 52%, 66%, 0.852);
+    
+          /*========== Font and typography ==========*/
+          /*.5rem = 8px | 1rem = 16px ...*/
+          --body-font: "Bai Jamjuree", sans-serif;
+          --h2-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+        }
+    
+        /*=============== BASE ===============*/
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+        }
+    
+        body {
+          font-family: var(--body-font);
+          font-size: var(--normal-font-size);
+          background-color: var(--body-color);
+          color: var(--white-color);
+        }
+    
+        a {
+          text-decoration: none;
+        }
+    
+        .card__img {
+          display: block;
+          max-width: 200px;
+          height: 200px;
+          ;
+        }
+    
+    
+        /*=============== CARD ===============*/
+    
+    
+        .card__container {
+          padding-block: 5rem;
+          padding-top: 15px;
+          padding-bottom: 40px;
+        }
+    
+        .card__content {
+          margin-inline: 1.75rem;
+          border-radius: 1.25rem;
+          overflow: hidden;
+        }
+    
+        .card__article {
+          width: 300px;
+          border-radius: 1.25rem;
+          overflow: hidden;
+        }
+    
+        .card__image {
+          position: relative;
+          background-color: var(--first-color-light);
+          padding-top: 1.5rem;
+          margin-bottom: -.75rem;
+        }
+    
+        .card__data {
+          background-color: var(--container-color);
+          padding: 1.5rem 2rem;
+          border-radius: 1rem;
+          text-align: center;
+          position: relative;
+          z-index: 10;
+        }
+    
+        .card__img {
+          width: 200px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 5;
+        }
+    
+        .card__shadow {
+          width: 200px;
+          height: 200px;
+          background-color: var(--first-color-alt);
+          border-radius: 50%;
+          position: absolute;
+          top: 3.75rem;
+          left: 0;
+          right: 0;
+          margin-inline: auto;
+          filter: blur(45px);
+        }
+    
+        .card__name {
+          font-size: var(--h2-font-size);
+          color: var(--second-color);
+          margin-bottom: .75rem;
+        }
+    
+        .card__description {
+          font-weight: 500;
+          margin-bottom: 1.75rem;
+        }
+    
+        .card__button {
+          display: inline-block;
+          background-color: var(--first-color);
+          padding: .75rem 1.5rem;
+          border-radius: .25rem;
+          color: var(--dark-color);
+          font-weight: 600;
+        }
+    
+        /* Swiper class */
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          content: "";
+        }
+    
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: initial;
+          height: initial;
+          font-size: 3rem;
+          color: var(--second-color);
+          display: none;
+        }
+    
+        .swiper-button-prev {
+          left: 0;
+        }
+    
+        .swiper-button-next {
+          right: 0;
+        }
+    
+        .swiper-pagination-bullet {
+          background-color: hsl(212, 32%, 40%);
+          opacity: 1;
+        }
+    
+        .swiper-pagination-bullet-active {
+          background-color: var(--second-color);
+        }
+    
+        /*=============== BREAKPOINTS ===============*/
+        /* For small devices */
+        @media screen and (max-width: 320px) {
+          .card__data {
+            padding: 1rem;
+          }
+        }
+    
+        /* For medium devices */
+        @media screen and (min-width: 768px) {
+          .card__content {
+            margin-inline: 3rem;
+          }
+    
+          .swiper-button-next,
+          .swiper-button-prev {
+            display: block;
+          }
+        }
+    
+        /* For large devices */
+        @media screen and (min-width: 1120px) {
+          .card__container {
+            max-width: 1120px;
+          }
+    
+          .swiper-button-prev {
+            left: -1rem;
+          }
+    
+          .swiper-button-next {
+            right: -1rem;
+          }
+        }
+      </style>
+</head>
+
+<body>
+     <!--=============== Nav Bar section ===============-->
+  <header class="p-1 xl:p-3 shadow-sm relative">
+    <nav class="container mx-auto">
+      <div class="flex flex-wrap items-center justify-between mx-auto px-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="images/logo.png" class="w-8 2xl:w-12" alt="Churi Hill  Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:w-auto md:block text-sm" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:justify-end md:items-center md:gap-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-black bg-primary rounded md:bg-transparent md:text-primary md:hover:text-primary md:p-0 2xl:text-xl">Home</a>
+            </li>
+            <li>
+              <a href="/src/about.html"
+                class="block py-2 px-3 rounded text-gray-800 hover:bg-blue-900 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">About
+                Us</a>
+            </li>
+            <li>
+              <a href="department.html"
+                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Departments</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Doctors</a>
+            </li>
+            <li>
+              <a href="/src/news.html"
+                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">News</a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Contacts</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:px-6 md:rounded-md md:bg-blue-800 md:text-white md:border-0 md:hover:bg-blue-600 d:p-0 transtition-colors ease-out duration-300 2xl:text-xl">Make
+                an appointment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--=============== Nav Bar section ===============-->
+</body>
+
+</html>
