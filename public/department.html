@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Chure Hill Hospital, Hetauda</title>
+    
+        <!--=============== favicon===============-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+        <!--=============== Tailwind css ===============-->
+        <link href="output.css" rel="stylesheet">
+    
+         <!--=============== Font awesome ===============-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+    </head>
+    <body>
+
+        <!--=============== Nav Bar section ===============-->
+        <header class="p-1 xl:p-3 shadow-sm relative">
+            <nav class="container mx-auto">
+              <div class="flex flex-wrap items-center justify-between mx-auto px-4">
+                <a
+                  href="index.html"
+                  class="flex items-center space-x-3 rtl:space-x-reverse"
+                >
+                  <img
+                    src="images/logo.png"
+                    class="w-8 2xl:w-12"
+                    alt="Churi Hill  Logo"
+                  />
+                </a>
+                <button
+                  data-collapse-toggle="navbar-default"
+                  type="button"
+                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+                  aria-controls="navbar-default"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 17 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 1h15M1 7h15M1 13h15"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="hidden w-full md:w-auto md:block text-sm"
+                  id="navbar-default"
+                >
+                  <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:justify-end md:items-center md:gap-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+                  >
+                    <li>
+                      <a
+                        href="index.html"
+                        class="block py-2 px-3 text-black bg-primary rounded md:bg-transparent md:text-primary md:hover:text-primary md:p-0 2xl:text-xl"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/src/about.html"
+                        class="block py-2 px-3 rounded text-gray-800 hover:bg-blue-900 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="department.html"
+                        class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl"
+                        >Departments</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl"
+                        >Doctors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/src/news.html"
+                        class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl"
+                        >News</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl"
+                        >Contacts</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:px-6 md:rounded-md md:bg-blue-800 md:text-white md:border-0 md:hover:bg-blue-600 d:p-0 transtition-colors ease-out duration-300 2xl:text-xl"
+                        >Make an appointment</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <!--=============== Nav Bar section ===============-->
+        
+       
+    
+            <!--=============== Title section ===============-->
+        <div class="container mx-auto py-0 ">
+           <div class="bg-cover bg-center bg-no-repeat py-8" style="background-image: url('images/contactback.jpg');">
+               <div class="text-center">
+                   <p class="text-base font-semibold uppercase tracking-wide text-white ">
+                       Chure Hill Hospital
+                   </p>
+                   <h2 class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+                       Our Departments
+                   </h2>
+                   <p class="mx-auto mt-4 max-w-3xl text-xl text-white ">Hetauda</p>
+               </div>
+           </div>
+        </div>
+            <!--=============== Title section ===============-->
+    
+             <!--=============== department container ===============-->
+        <section class="bg-white px-4 lg:px-16"> 
+    
+            
+            <div class="container mx-auto px-[12px] md:px-24 xl:px-12 max-w-[1300px] nanum2">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-28 lg:gap-y-16 pt-20 bg-white">
+    
+                    <!--=============== card 1 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/medicine.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="painrelief" title="painrelief" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Pain Medicine
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 1 ===============-->
+        
+                    <!--=============== card 2 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/hematology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Hematology"
+                                        title="Hematology" loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Hematology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 2 ===============-->
+    
+                     <!--=============== card 3 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/generalmedi.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Medical" title="Medical" loading="lazy" width="200"
+                                        height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    General Medicine
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 3 ===============-->
+        
+                    <!--=============== card 4 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/cardio.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Cardiology" title="Cardiology" loading="lazy" width="200"
+                                        height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Cardiology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 4 ===============-->
+        
+                    <!--=============== card 5 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/oncology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Medical Oncology"
+                                        title="Medical Oncology" loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                   Medical Oncology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 5 ===============-->
+        
+                    <!--=============== card 6 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/gastro.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Gastro Intestinal" title="Gastro Intestinal" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Gastro Intestinal (GI) Medicine
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 6 ===============-->
+        
+                    <!--=============== card 7 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/surgeon.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Surgery" title="Surgery"
+                                        loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Surgery
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 7 ===============-->
+        
+                    <!--=============== card 8 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/neurology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Neurology" title="Neurology" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Neurology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 8 ===============-->
+        
+                    <!--=============== card 9 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/neurosurgery.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Neurosurgery"
+                                        title="Neurosurgery" loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Neurosurgery
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 9 ===============-->
+        
+                    <!--=============== card 10 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/nephrology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Nephrology" title="Nephrology"
+                                        loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Nephrology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 10 ===============-->
+        
+                    <!--=============== card 11 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="@" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/gastroenterology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Gastroenterology" title="Gastroenterology" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Gastroenterology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 11 ===============-->
+        
+                    <!--=============== card 12 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/ent.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="ENT, Head & Neck Surgery" title="ENT, Head & Neck Surgery" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    ENT, Head & Neck Surgery
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 12 ===============-->
+        
+                    <!--=============== card 13 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/orthopedics.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Orthopaedics" title="Orthopaedics" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Orthopaedics
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 13 ===============-->
+        
+                    <!--=============== card 14 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/anaesthesiology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Anaesthesiology" title="Anaesthesiology"
+                                        loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Anaesthesiology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 14 ===============-->
+        
+                    <!--=============== card 15 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/radiology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Radiology" title="Radiology" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Radiology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 15 ===============-->
+        
+                    <!--=============== card 16 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#"
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/emergency.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Emergency" title="Emergency" loading="lazy" width="200"
+                                        height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Emergency
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 16 ===============-->
+        
+                    <!--=============== card 17 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/pathology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Pathology" title="Pathology" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Pathology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 17 ===============-->
+        
+                    <!--=============== card 18 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href="#" class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/gynecology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Gynecology & Obstetrics" title="Gynecology & Obstetrics" loading="lazy" width="200"
+                                        height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Gynecology & Obstetrics
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 18 ===============-->
+        
+                    <!--=============== card 19 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href=" "
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/pediatrics.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Pediatric" title="Pediatric" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Pediatric
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 19 ===============-->
+    
+                    <!--=============== card 20 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href=" "
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/icu.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="ICU" title="ICU" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    ICU
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 20 ===============-->
+    
+                    <!--=============== card 21 ===============-->
+                    <div class="relative group h-48 flex   flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+                        <a href=" "
+                            class="block">
+                            <div class="h-28">
+                                <div
+                                    class="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-40%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-sky-600 rounded-xl justify-items-center align-middle">
+                                    <img src="images/departmentimg/dermatology.png"
+                                        class="w-36 h-36  mt-6 m-auto" alt="Dermatology" title="Dermatology" loading="lazy"
+                                        width="200" height="200">
+                                </div>
+                            </div>
+                            <div class="p-6   z-10 w-full   ">
+                                <p
+                                    class="mb-2 inline-block text-tg text-center w-full  text-xl  font-sans  font-semibold leading-snug tracking-normal   antialiased">
+                                    Dermatology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--=============== card 21 ===============-->
+    
+                    <!--=============== add more container here ===============-->
+        
+                </div>
+            </div>
+        </section>
+        <!--=============== department container ===============-->
+    
+        <!--=============== Footer ===============-->
+     <footer class="container mx-auto py-8 border-t border-gray-300 bg-blue-800 text-white text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-center md:gap-8 space-x-4">
+            <!-- Contact Us -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0 mx-auto md:text-center">
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <ul class="mt-4">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>123 Main Street, City</li>
+                    <li><i class="fas fa-envelope mr-2"></i>info@churehillhospital.com</li>
+                    <li><i class="fas fa-phone-alt mr-2"></i>123-456-7890</li>
+                </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="mt-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="department.html" class="hover:underline">Departments</a></li>
+                    <li><a href="#" class="hover:underline">Doctors</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0">
+                <div class="px-4">
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <ul class="mt-4 flex flex-col items-center md:items-start">
+                        <li class="mb-4">
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-facebook-f mr-2"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-twitter mr-2"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-instagram mr-2"></i>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <hr class="my-5 border-black">
+        <div class="mt-8 flex justify-center md:justify-center">
+            <p class="inline-block">&copy; 2024 Chure Hill Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!--=============== Footer ===============-->
+    
+    <script>
+    
+        //------js for navbar------//
+        const accordionHeadings = document.querySelectorAll(
+                '[data-toggle="accordion"]'
+              )
+              accordionHeadings.forEach((heading) => {
+                heading.addEventListener("click", () => {
+                  heading.querySelector("i").classList.toggle("rotate")
+                  const targetId = heading.getAttribute("data-target")
+                  const target = document.querySelector(targetId)
+                  target.classList.toggle("open")
+                })
+              })
+        
+              const aboutNavigations = document.querySelectorAll(".about-item")
+              aboutNavigations.forEach((navigation) => {
+                navigation.addEventListener("click", (e) => {
+                  turnAllOff(aboutNavigations)
+                  const content = document.querySelector(navigation.dataset.target)
+                  resetContent()
+                  content.classList.toggle("hidden")
+                  navigation.classList.toggle("about-item-active")
+                })
+              })
+        
+              const turnAllOff = (item, property) => {
+                item.forEach((i) => {
+                  i.classList.remove("about-item-active")
+                })
+              }
+              const resetContent = () => {
+                document.querySelectorAll(".about-content").forEach((item) => {
+                  item.classList.add("hidden")
+                })
+              }
+        
+              //for nav bar
+              const mobileMenuBtn = document.querySelector(
+                '[data-collapse-toggle="navbar-default"]'
+              )
+              mobileMenuBtn.addEventListener("click", function () {
+                const mobileMenu = document.getElementById(
+                  this.getAttribute("data-collapse-toggle")
+                )
+                mobileMenu.classList.toggle("hidden")
+              })
+               //------js for navbar------//
+        
+           </script>
+    </body>
+</html>
