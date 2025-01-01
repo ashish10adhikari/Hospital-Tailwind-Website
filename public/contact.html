@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chure Hill Hospital, Hetauda</title>
+
+    <!--=============== favicon===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!--=============== Tailwindcss ===============-->
+    <link href="output.css" rel="stylesheet">
+
+
+    <!--=============== Font awesome ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!--=============== Nav Bar section ===============-->
+    <header class="p-1 xl:p-3 shadow-sm relative">
+        <nav class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="images/logo.png" class="w-8 2xl:w-12" alt="Churi Hill  Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:w-auto md:block text-sm" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:justify-end md:items-center md:gap-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-black bg-primary rounded md:bg-transparent md:text-primary md:hover:text-primary md:p-0 2xl:text-xl">Home</a>
+                        </li>
+                        <li>
+                            <a href="/src/about.html"
+                                class="block py-2 px-3 rounded text-gray-800 hover:bg-blue-900 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="department.html"
+                                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Departments</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Doctors</a>
+                        </li>
+                        <li>
+                            <a href="/src/news.html"
+                                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">News</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 2xl:text-xl">Contacts</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:px-6 md:rounded-md md:bg-blue-800 md:text-white md:border-0 md:hover:bg-blue-600 d:p-0 transtition-colors ease-out duration-300 2xl:text-xl">Make
+                                an appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--=============== Nav Bar section ===============-->
+
+    <!--=============== Title section ===============-->
+    <div class="container mx-auto py-0">
+        <div class="bg-cover bg-center bg-no-repeat py-8" style="background-image: url('images/contactback.jpg');">
+            <div class="text-center">
+                <p class="text-base font-semibold uppercase tracking-wide text-white ">
+                    Chure Hill Hospital
+                </p>
+                <h2 class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+                    Contact Us
+                </h2>
+                <p class="mx-auto mt-4 max-w-3xl text-xl text-white ">Hetauda</p>
+            </div>
+        </div>
+    </div>
+    <!--=============== Title section ===============-->
+
+    <!--=============== Main ===============-->
+    <section class=" bg-slate-200" id="contact">
+        <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8 lg:py-20">
+
+            <div class="flex items-stretch justify-center">
+                <div class="grid md:grid-cols-2">
+                    <div class="h-full pr-6">
+                        <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                        <ul class="mb-6 md:mb-0">
+                            <li class="flex">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-800 hover:bg-blue-600 text-gray-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                        <path
+                                            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4 mb-4">
+                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">Our Address
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-slate-400">Mahendra Hwy, Hetauda</p>
+                                    <p class="text-gray-600 dark:text-slate-400">Bagmati Province</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-800 hover:bg-blue-600 text-gray-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <path
+                                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                        </path>
+                                        <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                        <path d="M15 3a6 6 0 0 1 6 6"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4 mb-4">
+                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">Contact
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
+                                    <p class="text-gray-600 dark:text-slate-400">Mail: 123@gmail.com</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-800 hover:bg-blue-600 text-gray-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                        <path d="M12 7v5l3 3"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4 mb-4">
+                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">Working
+                                        hours</h3>
+                                    <p class="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
+                                    <p class="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                        <h2 class="mb-4 text-2xl font-bold dark:text-black">Get in Touch</h2>
+
+                        <!--=============== form ===============-->
+                        <form class="max-w-md mx-0 bg-white p-6 rounded-lg shadow-md">
+                            <div class="mb-6">
+                                <div class="mx-0 mb-1 sm:mb-4">
+                                    <div class="mx-0 mb-1 sm:mb-4">
+                                        <label for="name" class="pb-1 text-xs uppercase tracking-wider">Full
+                                            Name:</label><input type="text" id="name" autocomplete="given-name"
+                                            placeholder="Your name"
+                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            name="name">
+                                    </div>
+                                    <div class="mx-0 mb-1 sm:mb-4">
+                                        <label for="email"
+                                            class="pb-1 text-xs uppercase tracking-wider">Email:</label><input
+                                            type="email" id="email" autocomplete="email"
+                                            placeholder="Your email address"
+                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            name="email">
+                                    </div>
+                                    <div class="mx-0 mb-1 sm:mb-4">
+                                        <label for="email" class="pb-1 text-xs uppercase tracking-wider">Phone
+                                            Number:</label><input type="tel" id="contact-number" autocomplete="number"
+                                            placeholder="Your phone number"
+                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            name="email">
+                                    </div>
+                                    <div class="mx-0 mb-1 sm:mb-4">
+                                        <label for="email"
+                                            class="pb-1 text-xs uppercase tracking-wider">Subject:</label><input
+                                            type="text" id="Subject" autocomplete="subject" placeholder="Subject"
+                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            name="email">
+                                    </div>
+                                </div>
+                                <div class="mx-0 mb-1 sm:mb-4">
+                                    <label for="textarea"
+                                        class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea"
+                                        name="textarea" cols="30" rows="5" placeholder="Write your message..."
+                                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit"
+                                    class="w-full bg-blue-800 hover:bg-blue-600 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                        <!--===============form ===============-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============== map ===============-->
+
+    <!-- GOOGLE MAP -->
+    <section id="google-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.218542934821!2d85.00816227531362!3d27.431299076341848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb4a3c823dd85b%3A0xafcb0a79eaa67f02!2sChure%20Hill%20Hospital!5e0!3m2!1sen!2snp!4v1712043214263!5m2!1sen!2snp"
+            width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <!--=============== Footer ===============-->
+    <footer
+        class="container mx-auto py-8 border-t border-gray-300 mt-0 bg-blue-800 text-white text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-center md:gap-8 space-x-4">
+            <!-- Contact Us -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0 mx-auto md:text-center">
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <ul class="mt-4">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>123 Main Street, City</li>
+                    <li><i class="fas fa-envelope mr-2"></i>info@churehillhospital.com</li>
+                    <li><i class="fas fa-phone-alt mr-2"></i>123-456-7890</li>
+                </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="mt-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="department.html" class="hover:underline">Departments</a></li>
+                    <li><a href="#" class="hover:underline">Doctors</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="w-full md:w-1/3 mt-8 md:mt-0">
+                <div class="px-4">
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <ul class="mt-4 flex flex-col items-center md:items-start">
+                        <li class="mb-4">
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-facebook-f mr-2"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-twitter mr-2"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white hover:text-black flex items-center">
+                                <i class="fab fa-instagram mr-2"></i>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <hr class="my-5 border-black">
+        <div class="mt-8 flex justify-center md:justify-center">
+            <p class="inline-block">&copy; 2024 Chure Hill Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--=============== Footer ===============-->
+
+    <script>
+
+        //------js for navbar------//
+        const accordionHeadings = document.querySelectorAll(
+            '[data-toggle="accordion"]'
+        )
+        accordionHeadings.forEach((heading) => {
+            heading.addEventListener("click", () => {
+                heading.querySelector("i").classList.toggle("rotate")
+                const targetId = heading.getAttribute("data-target")
+                const target = document.querySelector(targetId)
+                target.classList.toggle("open")
+            })
+        })
+
+        const aboutNavigations = document.querySelectorAll(".about-item")
+        aboutNavigations.forEach((navigation) => {
+            navigation.addEventListener("click", (e) => {
+                turnAllOff(aboutNavigations)
+                const content = document.querySelector(navigation.dataset.target)
+                resetContent()
+                content.classList.toggle("hidden")
+                navigation.classList.toggle("about-item-active")
+            })
+        })
+
+        const turnAllOff = (item, property) => {
+            item.forEach((i) => {
+                i.classList.remove("about-item-active")
+            })
+        }
+        const resetContent = () => {
+            document.querySelectorAll(".about-content").forEach((item) => {
+                item.classList.add("hidden")
+            })
+        }
+
+        //for nav bar
+        const mobileMenuBtn = document.querySelector(
+            '[data-collapse-toggle="navbar-default"]'
+        )
+        mobileMenuBtn.addEventListener("click", function () {
+            const mobileMenu = document.getElementById(
+                this.getAttribute("data-collapse-toggle")
+            )
+            mobileMenu.classList.toggle("hidden")
+        })
+        //------js for navbar------//
+
+    </script>
+</body>
+
+</html>
